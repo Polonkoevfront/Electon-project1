@@ -1,0 +1,20 @@
+@import "../../styles/variables.scss";
+
+.sort {
+    width: 218px;
+    height: 70px;
+    background: $color_002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    span {
+        color: $color_008;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    img {
+        margin-left: 16px;
+    }
+}

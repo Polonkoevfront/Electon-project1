@@ -1,0 +1,177 @@
+@import '../../styles/variables.scss';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+
+    .nav_help {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 71px;
+        margin-left: 61px;
+
+        span {
+            color: $color_001;
+            font-size: 14px;
+        }
+
+        .nav_help_block {
+            display: flex;
+            margin-right: 8%;
+
+            .store {
+                display: flex;
+                margin-right: 36px;
+                gap: 20px;
+
+                p {
+                    color: $color_001;
+                    font-size: 14px;
+                }
+            }
+
+            .order {
+                display: flex;
+                gap: 20px;
+
+                p {
+                    color: $color_001;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .nav_pages {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4.3%;
+        width: 100%;
+        height: 100px;
+        background: $color_003;
+        position: relative;
+
+        .nav_pages_search {
+            display: flex;
+            align-items: center;
+
+            .label {
+                display: flex;
+                align-items: center;
+                width: 438px;
+                height: 56px;
+                background: $color_008; // Белый фон контейнера
+                border-radius: 20px;
+                overflow: hidden; // Чтобы кнопка не вылезала за скругления
+                margin-left: 5.3rem;
+
+                input {
+                    flex: 1; // Занимает всё свободное пространство
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    padding: 0 25px; // Внутренний отступ текста
+                    font-size: 14px;
+                    background: transparent;
+
+                    &::placeholder {
+                        color: $color_001;
+                    }
+                }
+            }
+        }
+
+        .nav_buy {
+            display: flex;
+            margin-right: 9.12%;
+            gap: 29px;
+
+            .page_item {
+                display: flex;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 14px;
+                    height: 15px;
+                    color: $color_008;
+                    font-size: 9px;
+                    background: $color_002;
+                    border-radius: 50%;
+                    margin-left: 3px;
+                }
+
+                span {
+                    color: $color_008;
+                    font-size: 14px;
+                    margin-left: 12px;
+                }
+            }
+        }
+    }
+
+    .pages_navigation {
+        display: flex;
+        width: 100%;
+        height: 71px;
+        background: $color_011;
+
+        .pages_block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            margin-left: 7.5%;
+            position: relative;
+
+            ul {
+                display: flex;
+                gap: 29px;
+
+                .page {
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+
+                    li {
+                        color: $color_019;
+                        list-style: none;
+                    }
+
+                    img {
+                        margin-left: 16px;
+                    }
+                }
+            }
+
+            p {
+                color: $color_003;
+                font-size: 16px;
+                font-weight: 600;
+                margin-right: 6%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+
+    // .navbar {
+
+    //     .nav_help {
+    //         width: 100%;
+    //         height: 71px;
+    //         border: 1px solid red;
+    //     }
+    // }
+}

@@ -1,0 +1,91 @@
+@import '../../../styles/variables.scss';
+
+.btn {
+    border-radius: 20px;
+
+    &.primary {
+        color: $color_008;
+        background: $color_003;
+        border: none;
+    }
+
+    &.deafult {
+        color: $color_008;
+        background: $color_002;
+        border: none;
+    }
+
+    &.outline {
+        color: $color_012;
+        border: 1px solid $color_012;
+    }
+
+    &.secondary {
+        color: $color_017;
+        background: $color_006;
+        border: none;
+    }
+
+    &.quaternary {
+        color: $color_013;
+        border: 1px solid $color_013;
+    }
+
+    &.muted {
+        color: $color_018;
+        border: 1px solid $color_001;
+    }
+
+    &.muted2 {
+        color: $color_015;
+        border: 1px solid $color_001;
+    }
+
+    &.w132 {
+        width: 132px;
+    }
+
+    &.w134 {
+        width: 134px;
+    }
+
+    &.w144 {
+        width: 144px;
+    }
+
+    &.w187 {
+        width: 187px;
+    }
+
+    &.w204 {
+        width: 204px;
+    }
+
+    &.w223 {
+        width: 223px;
+    }
+
+    &.w241 {
+        width: 241px;
+    }
+
+    &.w295 {
+        width: 295px;
+    }
+
+    &.h45 {
+        height: 45px;
+    }
+
+    &.h56 {
+        height: 56px;
+    }
+
+    &.h60 {
+        height: 60px;
+    }
+
+    &.h73 {
+        height: 73px;
+    }
+}
