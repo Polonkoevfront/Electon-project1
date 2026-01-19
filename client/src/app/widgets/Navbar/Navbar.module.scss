@@ -76,10 +76,10 @@ body {
                 input {
                     flex: 1; // Занимает всё свободное пространство
                     height: 100%;
+                    font-size: 14px;
                     border: none;
                     outline: none;
                     padding: 0 25px; // Внутренний отступ текста
-                    font-size: 14px;
                     background: transparent;
 
                     &::placeholder {
