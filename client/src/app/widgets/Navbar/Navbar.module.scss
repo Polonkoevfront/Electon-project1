@@ -68,18 +68,18 @@ body {
                 align-items: center;
                 width: 438px;
                 height: 56px;
-                background: $color_008; // Белый фон контейнера
+                background: $color_008;
                 border-radius: 20px;
-                overflow: hidden; // Чтобы кнопка не вылезала за скругления
+                overflow: hidden;
                 margin-left: 5.3rem;
 
                 input {
-                    flex: 1; // Занимает всё свободное пространство
+                    flex: 1;
                     height: 100%;
                     font-size: 14px;
                     border: none;
                     outline: none;
-                    padding: 0 25px; // Внутренний отступ текста
+                    padding: 0 25px;
                     background: transparent;
 
                     &::placeholder {
@@ -126,12 +126,16 @@ body {
         height: 71px;
         background: $color_011;
 
+        .sort {
+            margin-left: 63px;
+        }
+
         .pages_block {
             display: flex;
             align-items: center;
             justify-content: space-between;
             width: 100%;
-            margin-left: 7.5%;
+            margin-left: 6%;
             position: relative;
 
             ul {

@@ -4,7 +4,7 @@ import { classNames } from '../../lib/classNames';
 
 type buttonVariant = "primary" | "deafult" | "outline" | "secondary" | "quaternary" | "muted" | "muted2";
 type buttonWidth = 132 | 134 | 144 | 187 | 204 | 223 | 241 | 295;
-type buttonHeight = 56 | 45 | 60 | 73;
+type buttonHeight = 56 | 45 | 60 | 61 | 73;
 
 interface ButtonProps {
     children: ReactNode;
@@ -38,6 +38,7 @@ const buttonHeightClasses: Record<buttonHeight, string> = {
     "45": cls.h45,
     "56": cls.h56,
     "60": cls.h60,
+    "61": cls.h61,
     "73": cls.h73
 };
 

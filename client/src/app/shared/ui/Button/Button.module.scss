@@ -17,6 +17,7 @@
 
     &.outline {
         color: $color_012;
+        background: none;
         border: 1px solid $color_012;
     }
 
@@ -43,18 +44,26 @@
 
     &.w132 {
         width: 132px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w134 {
         width: 134px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w144 {
         width: 144px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w187 {
         width: 187px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w204 {
@@ -63,14 +72,20 @@
 
     &.w223 {
         width: 223px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w241 {
         width: 241px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w295 {
         width: 295px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.h45 {
@@ -83,6 +98,10 @@
 
     &.h60 {
         height: 60px;
+    }
+
+    &.h61 {
+        height: 61px;
     }
 
     &.h73 {

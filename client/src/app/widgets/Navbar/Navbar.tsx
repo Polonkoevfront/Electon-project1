@@ -53,7 +53,7 @@ export const Navbar = () => {
                 </div>
             </div>
             <div className={cls.pages_navigation}>
-                <div>
+                <div className={cls.sort}>
                     <Sort />
                 </div>
                 <div className={cls.pages_block}>
