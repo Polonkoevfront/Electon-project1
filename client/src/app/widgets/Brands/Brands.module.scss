@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+
+.brands {
+    display: flex;
+    justify-content: center;
+    width: 91.3%;
+    height: 136px;
+    background: $color_010;
+    margin-left: 4.4%;
+    margin-top: 30px;
+
+    .brands_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 55px;
+
+        img {
+            width: 20%;
+            margin: 0 auto;
+        }
+    }
+}

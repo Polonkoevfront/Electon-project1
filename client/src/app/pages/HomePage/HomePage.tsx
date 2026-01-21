@@ -1,6 +1,5 @@
 import cls from "./HomePage.module.scss";
-import { AboutOurProduct, CarouselNewProduct, CarouselNews, DiscountNews, Footer, Navbar } from "../../widgets";
-import { Button, Text } from "../../shared/ui";
+import { AboutOurProduct, Brands, CarouselNewProduct, CarouselNews, DiscountNews, Footer, Navbar } from "../../widgets";
 
 const HomePage = () => {
     return (
@@ -11,8 +10,11 @@ const HomePage = () => {
             <CarouselNewProduct />
             <DiscountNews />
             <AboutOurProduct />
+            <Brands />
 
-            <Footer />
+            <div style={{ marginTop: "30px" }}>
+                <Footer />
+            </div>
         </div >
     )
 };
