@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.news_discount {
+    max-width: 1315px;
+    width: 100%;
+    min-height: 417px;
+    margin: 0 auto;
+
+    background-image: url(../../shared/assets/png/news_discount.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .news_discount_elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 47%;
+
+        .btn2 {
+            margin-top: 36px;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .discount_new_txt {
+                color: $color_007;
+            }
+
+            span {
+                color: $color_008;
+                font-size: 18px;
+            }
+        }
+    }
+}

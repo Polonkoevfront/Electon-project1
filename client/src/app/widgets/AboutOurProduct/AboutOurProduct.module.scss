@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.about_product {
+    display: flex;
+    width: 91.3%;
+    height: 155px;
+    border-radius: 20px;
+    background: $color_010;
+    margin-left: 4.4%;
+
+    .about_product_body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 7.22%;
+
+        .guarantee_item {
+            display: flex;
+            gap: 31px;
+
+            div {
+                margin-top: 10px;
+
+                span {
+                    color: $color_003;
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+                p {
+                    color: $color_003;
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
