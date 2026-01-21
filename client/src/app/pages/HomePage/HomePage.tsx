@@ -1,11 +1,12 @@
 import cls from "./HomePage.module.scss";
-import { CarouselNews, Footer, Navbar } from "../../widgets";
+import { CarouselNewProduct, CarouselNews, Footer, Navbar } from "../../widgets";
 
 const HomePage = () => {
     return (
         <div>
             <Navbar />
             <CarouselNews />
+            <CarouselNewProduct />
             <Footer />
         </div >
     )

@@ -47,7 +47,44 @@
             .product_img_block {
                 margin-right: 12.2%;
                 margin-top: 37px;
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                img {
+                    z-index: 2;
+                    position: relative;
+                }
+
+                .price_circle {
+                    position: absolute;
+                    bottom: 40px;
+                    right: -20px;
+
+                    width: 120px;
+                    height: 120px;
+                    background: $color_002;
+                    border-radius: 50%;
+                    z-index: 3;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-align: center;
+
+                    span,
+                    p {
+                        color: $color_008;
+                        font-size: 21px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        display: block;
+                    }
+                }
             }
+
         }
     }
 

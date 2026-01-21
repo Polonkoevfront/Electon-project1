@@ -46,6 +46,10 @@ export const CarouselNews = () => {
                         </div>
                         <div className={cls.product_img_block}>
                             <img src={camera} alt={item.title} />
+                            <div className={cls.price_circle}>
+                                <span>Only</span>
+                                <p>{item.price}</p>
+                            </div>
                         </div>
                     </div>
                 ))}
