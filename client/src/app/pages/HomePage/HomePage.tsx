@@ -1,5 +1,5 @@
 import cls from "./HomePage.module.scss";
-import { AboutOurProduct, Brands, CarouselNewProduct, CarouselNews, DiscountNews, Footer, Navbar } from "../../widgets";
+import { AboutOurProduct, Brands, CarouselManagers, CarouselNewProduct, CarouselNews, DiscountNews, Footer, Navbar } from "../../widgets";
 
 const HomePage = () => {
     return (
@@ -11,6 +11,7 @@ const HomePage = () => {
             <DiscountNews />
             <AboutOurProduct />
             <Brands />
+            <CarouselManagers />
 
             <div style={{ marginTop: "30px" }}>
                 <Footer />

@@ -27,7 +27,6 @@ export const CarouselNewProduct = () => {
     const handleScroll = (direction: 'prev' | 'next') => {
         const { current } = isRef;
         if (current) {
-            // const slideWidth = current.clientWidth + 16;
 
             const scrollAmount = direction === 'next'
                 ? current.scrollLeft + current.clientWidth

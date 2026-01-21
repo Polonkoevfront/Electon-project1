@@ -6,3 +6,4 @@ export { CarouselNewProduct } from './CarouselNewProduct/CarouselNewProduct';
 export { DiscountNews } from './DiscountNews/DiscountNews';
 export { AboutOurProduct } from './AboutOurProduct/AboutOurProduct';
 export { Brands } from './Brands/Brands';
+export { CarouselManagers } from './CarouselManagers/CarouselManagers';
