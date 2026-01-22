@@ -7,3 +7,5 @@ export { DiscountNews } from './DiscountNews/DiscountNews';
 export { AboutOurProduct } from './AboutOurProduct/AboutOurProduct';
 export { Brands } from './Brands/Brands';
 export { CarouselManagers } from './CarouselManagers/CarouselManagers';
+export { PopularElectrons } from './PopularElectrons/PopularElectrons';
+export { LatestNews } from './LatestNews/LatestNews';

@@ -1,6 +1,9 @@
 @import '../../../styles/variables.scss';
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
 
     &.primary {
@@ -68,6 +71,8 @@
 
     &.w204 {
         width: 204px;
+        font-size: 16px;
+        font-weight: 600;
     }
 
     &.w223 {
