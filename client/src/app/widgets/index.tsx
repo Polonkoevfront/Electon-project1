@@ -9,3 +9,5 @@ export { Brands } from './Brands/Brands';
 export { CarouselManagers } from './CarouselManagers/CarouselManagers';
 export { PopularElectrons } from './PopularElectrons/PopularElectrons';
 export { LatestNews } from './LatestNews/LatestNews';
+export { ProductCards } from './ProductCards/ProductCards';
+export { ProductCardItem } from './ProductCardItem/ProductCardItem';

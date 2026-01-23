@@ -1,0 +1,115 @@
+@import '../../styles/variables.scss';
+
+.card {
+    width: 21.4%;
+    height: 313px;
+    border-radius: 20px;
+    border: 1px solid $color_025;
+    cursor: pointer;
+
+    .image_block {
+        display: flex;
+        padding: 18px 0;
+        position: relative;
+
+        .headphone {
+            width: 92%;
+            border-radius: 30px;
+        }
+
+        div {
+            position: absolute;
+            left: 16rem;
+            top: 36px;
+            width: 27px;
+            height: 27px;
+            border-radius: 50%;
+            background: $color_029;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    .product_wrap {
+        position: relative;
+
+        .product_info {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            padding: 0 13px;
+
+            span {
+                color: $color_003;
+                font-size: 17px;
+                font-weight: 600;
+            }
+
+            p {
+                color: $color_017;
+                font-size: 17px;
+                font-weight: 600;
+            }
+        }
+
+        .product_btns {
+            display: flex;
+            position: absolute;
+            top: 0;
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(15px);
+            transform: all 0.3s ease;
+            padding: 27px 6px;
+            gap: 20px;
+
+            .btn {
+                display: flex;
+                justify-content: space-around;
+                gap: 15px;
+
+                div {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    background: $color_002;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        width: 17px;
+                        height: 17px;
+                    }
+                }
+            }
+
+            .btn_eye {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 70px;
+                height: 60px;
+                background: $color_006;
+                border-radius: 20px;
+            }
+        }
+
+    }
+
+    &:hover {
+
+        .product_info {
+            visibility: hidden;
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+
+        .product_btns {
+            visibility: visible;
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
