@@ -56,6 +56,7 @@ export const Button: FC<ButtonProps> = (props) => {
         variant && buttonVariantClasses[variant],
         width && buttonWidthtClasses[width],
         height && buttonHeightClasses[height],
+        className
     ];
 
     return (

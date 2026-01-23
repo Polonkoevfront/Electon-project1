@@ -55,6 +55,7 @@ footer {
                 }
 
                 img {
+                    cursor: pointer;
                     margin-right: 5%;
                 }
             }
@@ -121,6 +122,10 @@ footer {
                     display: flex;
                     margin-top: 20px;
                     gap: 10%;
+
+                    img {
+                        cursor: pointer;
+                    }
                 }
             }
         }
