@@ -1,0 +1,98 @@
+@import '../../styles/variables.scss';
+
+.product {
+
+    .nav_product {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 22rem;
+
+        .product_logo {
+            color: $color_020;
+        }
+
+        div {
+            display: flex;
+            gap: 13px;
+
+            .nav_item {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 139px;
+                height: 45px;
+                border-radius: 20px;
+                border: 1px solid $color_025;
+                text-decoration: none;
+
+                &:hover {
+                    border: 1px solid $color_003;
+                }
+
+                span {
+                    color: $color_020;
+                }
+            }
+        }
+    }
+
+    .product_cards_block {
+        display: flex;
+        width: 100%;
+        overflow-y: hidden;
+        scroll-snap-type: x mandatory;
+        gap: 20px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        .slide_product {
+            display: grid;
+            flex-shrink: 0;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, auto);
+            min-width: 100%;
+            scroll-snap-align: start;
+            gap: 26px;
+
+            &>div {
+                width: 100%;
+                min-width: 0;
+            }
+        }
+    }
+
+
+    .dots_block {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 51px;
+        gap: 12px;
+
+        .dot {
+            width: 19px;
+            height: 19px;
+            border-radius: 50%;
+            border: 1px solid $color_022;
+            background: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                background: $color_002;
+                transform: scale(1.2);
+            }
+
+            &.active {
+                background-color: #000;
+            }
+        }
+    }
+
+    .track::-webkit-scrollbar {
+        display: none;
+    }
+}
