@@ -1,9 +1,9 @@
-import HomePage from "./app/pages/HomePage/HomePage";
+import { Routing } from "./app/provider";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <Routing />
     </div>
   );
 }

@@ -1,0 +1,95 @@
+@import '../../styles/variables.scss';
+
+.cart_product_item {
+    display: flex;
+    align-items: center;
+
+    .product_info {
+        display: flex;
+        align-items: center;
+
+        img {
+            object-fit: contain;
+        }
+
+        div {
+            padding-left: 21px;
+            padding-top: 25px;
+
+            span {
+                color: $color_003;
+                font-size: 20px;
+                font-weight: 600;
+            }
+
+            p {
+                color: $color_034;
+                font-size: 20px;
+                margin: 15px 0;
+            }
+        }
+    }
+
+    .product_quantity {
+        display: flex;
+        align-items: center;
+        padding-left: 11%;
+        padding-top: 5px;
+        gap: 70px;
+
+        p {
+            color: $color_034;
+            font-size: 22px;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+
+            .count_minus {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 32px;
+                color: $color_031;
+                font-size: 18px;
+                background: $color_036;
+                border: 1px solid $color_035;
+            }
+
+            .count_num {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 62px;
+                height: 32px;
+                color: $color_031;
+                font-size: 18px;
+                background: $color_036;
+                border: 1px solid $color_035;
+            }
+
+            .count_plus {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 35px;
+                height: 32px;
+                color: $color_031;
+                font-size: 18px;
+                background: $color_036;
+                border: 1px solid $color_035;
+            }
+        }
+
+        img {}
+    }
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: $color_030;
+    border: none;
+}

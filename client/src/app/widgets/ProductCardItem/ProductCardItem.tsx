@@ -7,16 +7,17 @@ import heart from "../../shared/assets/svg/heart_black.svg";
 import cart from "../../shared/assets/svg/shopping-cart.svg";
 import eye from "../../shared/assets/svg/eye.svg";
 
-interface CardProps {
+type CardItemProps = {
+    id: string;
     title: string;
-    price: string;
+    price: number;
+    type: string;
     imageUrl: string;
-    className?: string;
 };
 
-export const ProductCardItem: FC<CardProps> = (props) => {
+export const ProductCardItem: FC<CardItemProps> = (props) => {
 
-    const { title, price, imageUrl, className = '' } = props;
+    const { id, title, price, type, imageUrl } = props;
 
     return (
         <>

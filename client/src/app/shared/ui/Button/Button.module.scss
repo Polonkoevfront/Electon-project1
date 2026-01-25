@@ -34,6 +34,7 @@
     &.quaternary {
         color: $color_013;
         border: 1px solid $color_013;
+        background: none;
     }
 
     &.muted {
@@ -43,7 +44,8 @@
 
     &.muted2 {
         color: $color_015;
-        border: 1px solid $color_001;
+        border: 1px solid $color_014;
+        background: none;
     }
 
     &.w132 {
@@ -94,8 +96,18 @@
         font-weight: 600;
     }
 
+    &.w339 {
+        width: 339px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
     &.h45 {
         height: 45px;
+    }
+
+    &.h52 {
+        height: 52px;
     }
 
     &.h56 {

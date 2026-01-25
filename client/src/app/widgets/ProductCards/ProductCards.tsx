@@ -1,11 +1,22 @@
 import cls from './ProductCards.module.scss';
 import { ProductCardItem } from '../ProductCardItem/ProductCardItem';
 import { AppLink, Text } from '../../shared/ui';
-import { useRef } from 'react';
+import { FC, useRef } from 'react';
 
 import stars from '../../shared/assets/svg/stars.svg';
 
-export const ProductCards = () => {
+type ProductCardsProps = {
+    id: string,
+    title: string
+    price: number;
+    // types: string[];
+    imageUrl: string
+};
+
+export const ProductCards: FC<ProductCardsProps> = (props) => {
+
+    const { id, title, price, imageUrl } = props;
+
     const scrollRef = useRef<HTMLDivElement>(null);
     const productCards = Array(24).fill(null);
 
@@ -54,8 +65,10 @@ export const ProductCards = () => {
                         {slide.map((_, cardIndex) => (
                             <ProductCardItem
                                 key={cardIndex}
+                                id='q'
+                                type=''
                                 title="Wireless headphones"
-                                price="$11,70"
+                                price={1170}
                                 imageUrl={stars}
                             />
                         ))}

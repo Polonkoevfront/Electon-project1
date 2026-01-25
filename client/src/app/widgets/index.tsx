@@ -11,3 +11,4 @@ export { PopularElectrons } from './PopularElectrons/PopularElectrons';
 export { LatestNews } from './LatestNews/LatestNews';
 export { ProductCards } from './ProductCards/ProductCards';
 export { ProductCardItem } from './ProductCardItem/ProductCardItem';
+export { CartProductItem } from './CartProductItem/CartProductItem';

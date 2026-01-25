@@ -3,8 +3,8 @@ import cls from './Button.module.scss';
 import { classNames } from '../../lib/classNames';
 
 type buttonVariant = "primary" | "deafult" | "outline" | "secondary" | "quaternary" | "muted" | "muted2";
-type buttonWidth = 132 | 134 | 144 | 187 | 204 | 223 | 241 | 295;
-type buttonHeight = 56 | 45 | 60 | 61 | 73;
+type buttonWidth = 132 | 134 | 144 | 187 | 204 | 223 | 241 | 295 | 339;
+type buttonHeight = 52 | 56 | 45 | 60 | 61 | 73;
 
 interface ButtonProps {
     children: ReactNode;
@@ -32,10 +32,12 @@ const buttonWidthtClasses: Record<buttonWidth, string> = {
     "204": cls.w204,
     "223": cls.w223,
     "241": cls.w241,
-    '295': cls.w295
+    '295': cls.w295,
+    '339': cls.w339
 };
 const buttonHeightClasses: Record<buttonHeight, string> = {
     "45": cls.h45,
+    "52": cls.h52,
     "56": cls.h56,
     "60": cls.h60,
     "61": cls.h61,

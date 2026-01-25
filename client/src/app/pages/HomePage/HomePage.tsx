@@ -1,14 +1,14 @@
 import cls from "./HomePage.module.scss";
 import { AboutOurProduct, Brands, CarouselManagers, CarouselNewProduct, CarouselNews, DiscountNews, Footer, LatestNews, Navbar, PopularElectrons, ProductCards } from "../../widgets";
 
-const HomePage = () => {
+export const HomePage = () => {
     return (
         <div className={cls.home}>
             <Navbar />
 
             <CarouselNews />
             <CarouselNewProduct />
-            <ProductCards />
+            <ProductCards id="" imageUrl="" price={1} title="" />
             <DiscountNews />
             <PopularElectrons />
             <AboutOurProduct />
@@ -20,5 +20,3 @@ const HomePage = () => {
         </div >
     )
 };
-
-export default HomePage;
