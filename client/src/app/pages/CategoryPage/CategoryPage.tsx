@@ -1,4 +1,4 @@
-import { Categories, Footer, Navbar } from '../../widgets';
+import { Avaliability, Brand, Categories, Color, DiscountNews, Footer, Navbar, ProductType, Size } from '../../widgets';
 import cls from './CategoryPage.module.scss';
 
 export const CategoryPage = () => {
@@ -9,7 +9,14 @@ export const CategoryPage = () => {
 
             <aside>
                 <Categories />
+                <Avaliability />
+                <ProductType />
+                <Brand />
+                <Color />
+                <Size />
             </aside>
+
+            <DiscountNews />
 
             <Footer />
         </div>

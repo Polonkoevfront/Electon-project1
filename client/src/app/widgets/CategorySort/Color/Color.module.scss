@@ -1,0 +1,127 @@
+@import '../../../styles/variables.scss';
+
+.color {
+
+    table {
+        display: flex;
+        flex-direction: column;
+        width: 23.5%;
+
+        caption {
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            gap: 11rem;
+
+            span {
+                color: $color_003;
+                font-weight: 600;
+                margin-top: 10px;
+            }
+
+            p {
+                color: $color_041;
+                font-size: 15px;
+            }
+        }
+
+        tbody {
+            display: flex;
+            flex-direction: column;
+
+            .select {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                gap: 11rem;
+
+                span {
+                    color: $color_031;
+                }
+
+                p {
+                    color: $color_041;
+                }
+            }
+
+            .checkbox_block {
+                margin-top: -4px;
+
+                td {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    gap: 12px;
+
+                    .circle_item {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_002;
+                    }
+
+                    .circle_item2 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $error_color;
+                    }
+
+                    .circle_item3 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_020;
+                    }
+
+                    .circle_item4 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_051;
+                    }
+
+                    .circle_item5 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_046;
+                    }
+
+                    .circle_item6 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_047;
+                    }
+
+                    .circle_item7 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_048;
+                    }
+
+                    .circle_item8 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_049;
+                    }
+
+                    .circle_item9 {
+                        width: 15px;
+                        height: 16px;
+                        border-radius: 50%;
+                        background: $color_050;
+                    }
+                }
+            }
+        }
+
+        hr {
+            width: 96.4%;
+            margin-top: 4%;
+        }
+    }
+}

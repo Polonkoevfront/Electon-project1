@@ -15,3 +15,8 @@ export { CartProductItem } from './CartProductItem/CartProductItem';
 export { CustomerReviews } from './CustomerReviews/CustomerReviews';
 
 export { Categories } from './CategorySort/Categories/Categories';
+export { Avaliability } from './CategorySort/Avaliability/Avaliability';
+export { ProductType } from './CategorySort/ProductType/ProductType';
+export { Brand } from './CategorySort/Brand/Brand';
+export { Color } from './CategorySort/Color/Color';
+export { Size } from './CategorySort/Size/Size';
