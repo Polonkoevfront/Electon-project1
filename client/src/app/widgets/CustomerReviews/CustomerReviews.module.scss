@@ -1,0 +1,49 @@
+@import '../../styles/variables.scss';
+
+.customer_reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div {
+        display: flex;
+        gap: 20px;
+    }
+
+    .reviews_body {
+        width: 91.1%;
+        height: 223px;
+        border-radius: 20px;
+        border: 1px solid $color_035;
+        margin-top: 35px;
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 42px 49px;
+
+            span {
+                color: $color_003;
+                font-size: 22px;
+                font-weight: 600;
+            }
+
+            p {
+                color: $color_044;
+                font-size: 19px;
+                margin: 0;
+            }
+
+            .review_btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 16.1%;
+                height: 40px;
+                color: $color_008;
+                font-size: 19px;
+                background: $color_003;
+            }
+        }
+    }
+}

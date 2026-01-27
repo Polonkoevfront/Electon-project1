@@ -1,5 +1,4 @@
 import cls from './CartProductItem.module.scss';
-import { Form } from '../../shared/ui';
 
 import close from "../../shared/assets/svg/close-circle.svg";
 import console_play from "../../shared/assets/png/console_play2.png";
@@ -20,7 +19,7 @@ export const CartProductItem = () => {
                     <p>$11,70</p>
                     <div className={cls.counter}>
                         <div className={cls.count_minus}>-</div>
-                        <div className={cls.count_num}>0</div>
+                        <div className={cls.count_num}>1</div>
                         <div className={cls.count_plus}>+</div>
                     </div>
                     <p>$11,70</p>
@@ -41,7 +40,7 @@ export const CartProductItem = () => {
                     <p>$11,70</p>
                     <div className={cls.counter}>
                         <div className={cls.count_minus}>-</div>
-                        <div className={cls.count_num}>0</div>
+                        <div className={cls.count_num}>1</div>
                         <div className={cls.count_plus}>+</div>
                     </div>
                     <p>$11,70</p>

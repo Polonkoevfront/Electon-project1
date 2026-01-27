@@ -2,6 +2,7 @@ import { FC } from 'react';
 import { Button } from '../../shared/ui';
 import cls from './ProductCardItem.module.scss';
 
+import stars from "../../shared/assets/svg/stars.svg";
 import headphone from "../../shared/assets/png/headphone.png";
 import heart from "../../shared/assets/svg/heart_black.svg";
 import cart from "../../shared/assets/svg/shopping-cart.svg";

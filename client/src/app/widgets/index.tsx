@@ -12,3 +12,6 @@ export { LatestNews } from './LatestNews/LatestNews';
 export { ProductCards } from './ProductCards/ProductCards';
 export { ProductCardItem } from './ProductCardItem/ProductCardItem';
 export { CartProductItem } from './CartProductItem/CartProductItem';
+export { CustomerReviews } from './CustomerReviews/CustomerReviews';
+
+export { Categories } from './CategorySort/Categories/Categories';

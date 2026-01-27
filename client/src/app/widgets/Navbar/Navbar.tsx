@@ -38,17 +38,23 @@ export const Navbar = () => {
                 <div className={cls.nav_buy}>
                     <div className={cls.page_item}>
                         <img src={user} alt="" />
-                        <span>Sign in</span>
+                        <AppLink className={cls.route} to="/sign">
+                            <span>Sign in</span>
+                        </AppLink>
                     </div>
                     <div className={cls.page_item}>
                         <img src={heart} alt="" />
                         <div>0</div>
-                        <span>Favorites</span>
+                        <AppLink className={cls.route} to="favorites">
+                            <span>Favorites</span>
+                        </AppLink>
                     </div>
                     <div className={cls.page_item}>
                         <img src={cart} alt="" />
                         <div>0</div>
-                        <span>Cart</span>
+                        <AppLink className={cls.route} to="/cart">
+                            <span>Cart</span>
+                        </AppLink>
                     </div>
                 </div>
             </div>

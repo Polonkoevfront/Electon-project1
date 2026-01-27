@@ -2,10 +2,7 @@ import { Button, Form } from '../../shared/ui';
 import { CartProductItem, Footer, Navbar } from '../../widgets';
 import cls from './CartPage.module.scss';
 
-import console_play from "../../shared/assets/png/console_play2.png";
-import console_play2 from "../../shared/assets/png/console_play3.png";
 import arrow from "../../shared/assets/svg/arrow-down-black.svg";
-import close from "../../shared/assets/svg/close-circle.svg";
 
 export const CartPage = () => {
     return (

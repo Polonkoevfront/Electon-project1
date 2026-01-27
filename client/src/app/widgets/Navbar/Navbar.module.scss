@@ -112,10 +112,15 @@ body {
                     margin-left: 3px;
                 }
 
-                span {
-                    color: $color_008;
-                    font-size: 14px;
-                    margin-left: 12px;
+                .route {
+                    display: flex;
+                    text-decoration: none;
+
+                    span {
+                        color: $color_008;
+                        font-size: 14px;
+                        margin-left: 12px;
+                    }
                 }
             }
         }

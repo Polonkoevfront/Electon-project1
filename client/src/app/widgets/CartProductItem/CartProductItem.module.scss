@@ -3,6 +3,7 @@
 .cart_product_item {
     display: flex;
     align-items: center;
+    margin-top: 10px;
 
     .product_info {
         display: flex;
@@ -92,4 +93,5 @@ hr {
     height: 1px;
     background: $color_030;
     border: none;
+    margin-top: 11px;
 }

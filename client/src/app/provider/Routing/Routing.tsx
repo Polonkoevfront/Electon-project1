@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router";
-import { CartPage, CategoryPage, HomePage } from "../../pages";
+import { CartPage, CategoryPage, FullProduct, HomePage } from "../../pages";
 
 export const Routing = () => {
     return (
@@ -7,9 +7,8 @@ export const Routing = () => {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/category" element={<CategoryPage />} />
-                {/* <Route path="/blog" element={<HomePage/>}/> */}
+                <Route path="/fullproduct" element={<FullProduct />} />
                 <Route path="/cart" element={<CartPage />} />
-                {/* <Route path="/about" element={<HomePage/>}/> */}
             </Routes>
         </>
     )
