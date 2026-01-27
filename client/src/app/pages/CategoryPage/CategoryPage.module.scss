@@ -1,6 +1,25 @@
 .category_page {
 
-    aside {
-        padding: 10.4% 4.21%;
+    .category_body {
+        display: flex;
+        align-items: flex-start;
+        padding: 12.33% 4.4%;
+
+        aside {
+            flex-shrink: 0;
+            width: 320px;
+        }
+
+        .pro {
+            width: 74%;
+            margin-left: 20px;
+
+            .cards_block {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                gap: 26px;
+            }
+        }
     }
 }

@@ -38,7 +38,7 @@ export const Navbar = () => {
                 <div className={cls.nav_buy}>
                     <div className={cls.page_item}>
                         <img src={user} alt="" />
-                        <AppLink className={cls.route} to="/sign">
+                        <AppLink className={cls.route} to="/login">
                             <span>Sign in</span>
                         </AppLink>
                     </div>
