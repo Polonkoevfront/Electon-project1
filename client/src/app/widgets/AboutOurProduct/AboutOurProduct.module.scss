@@ -13,7 +13,7 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        gap: 7.22%;
+        gap: 9%;
 
         .guarantee_item {
             display: flex;
@@ -21,6 +21,11 @@
 
             div {
                 margin-top: 10px;
+
+                // img {
+                //     width: 100%;
+                //     min-width: 67px;
+                // }
 
                 span {
                     color: $color_003;
@@ -32,6 +37,104 @@
                     color: $color_003;
                     font-size: 18px;
                     margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 991px) and (max-width: 1099px) {
+
+    .about_product {
+        display: flex;
+        width: 91.3%;
+        height: 155px;
+        border-radius: 20px;
+        background: $color_010;
+        margin: 4.5% auto;
+
+        .about_product_body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 7.22%;
+
+            .guarantee_item {
+                display: flex;
+                align-items: center;
+                gap: 31px;
+
+                div {
+                    margin-top: 10px;
+
+                    img {
+                        max-width: 67px;
+                    }
+
+                    span {
+                        color: $color_003;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        color: $color_003;
+                        font-size: 16px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 990px) {
+
+    .about_product {
+        display: flex;
+        width: 91.3%;
+        height: 155px;
+        border-radius: 20px;
+        background: $color_010;
+        margin: 4.5% auto;
+
+        .about_product_body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            gap: 7.22%;
+
+            .guarantee_item {
+                display: flex;
+                align-items: center;
+                flex: 0 1 auto;
+                gap: 31px;
+
+                div {
+                    margin-top: 10px;
+
+                    img {
+                        flex-shrink: 1;
+                        width: 100%;
+                        max-width: 67px;
+                        height: auto;
+                    }
+
+                    span {
+                        color: $color_003;
+                        font-size: 20px;
+                        font-weight: 600;
+                    }
+
+                    p {
+                        color: $color_003;
+                        font-size: 16px;
+                        margin-top: 10px;
+                    }
                 }
             }
         }

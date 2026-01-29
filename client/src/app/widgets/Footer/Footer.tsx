@@ -6,7 +6,6 @@ import headphone from "../../shared/assets/svg/headphone.svg";
 import google from "../../shared/assets/svg/google.svg";
 import facebook from "../../shared/assets/svg/facebook.svg";
 import whatsapp from "../../shared/assets/svg/whatsapp.svg";
-import Logo from "../../shared/assets/png/logo.png";
 import Logo2 from "../../shared/assets/png/logo-2.png";
 
 export const Footer = () => {

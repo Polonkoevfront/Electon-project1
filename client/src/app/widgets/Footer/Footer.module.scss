@@ -91,7 +91,7 @@ footer {
         display: flex;
         justify-content: space-between;
         width: 91.6%;
-        margin-top: 50px;
+        margin-top: 20px;
 
         .about_site {
             display: flex;
@@ -105,6 +105,7 @@ footer {
 
                     span {
                         display: block;
+                        white-space: nowrap;
                         color: $color_020;
                         font-size: 16px;
                         margin-top: 5px;
@@ -122,7 +123,7 @@ footer {
                 div {
                     display: flex;
                     margin-top: 20px;
-                    gap: 10%;
+                    gap: 2.3rem;
 
                     img {
                         cursor: pointer;
@@ -140,6 +141,7 @@ footer {
                 display: flex;
                 width: 100%;
                 justify-content: space-between;
+                margin-top: 11px;
 
                 ul {
                     list-style-position: outside;
@@ -161,7 +163,7 @@ footer {
                         margin-top: 7px;
 
                         &::marker {
-                            color: $color_022;
+                            color: $color_052;
                             font-size: 1.7em;
                         }
                     }

@@ -1,5 +1,5 @@
 import cls from './Navbar.module.scss';
-import { AppLink, Button } from '../../shared/ui';
+import { AppLink, AuthModal, Button } from '../../shared/ui';
 import { Sort } from '../Sort/Sort';
 
 import location from "../../shared/assets/svg/location.svg";
@@ -9,7 +9,21 @@ import user from "../../shared/assets/svg/user.svg";
 import heart from "../../shared/assets/svg/heart.svg";
 import cart from "../../shared/assets/svg/shopping-cart.svg";
 import arrow_down from "../../shared/assets/svg/arrow-down-black.svg";
+import menu from "../../shared/assets/svg/burger_menu.svg";
+import React from 'react';
+
 export const Navbar = () => {
+    const [isMenuActive, setIsMenuActive] = React.useState(false);
+    const [isOpenModal, setIsOpenModal] = React.useState(false);
+
+    const toogleMenu = () => {
+        setIsMenuActive(prev => !prev)
+    };
+
+    const openModal = () => {
+        setIsOpenModal(true)
+    };
+
     return (
         <nav className={cls.navbar}>
             <div className={cls.nav_help}>
@@ -28,7 +42,7 @@ export const Navbar = () => {
             </div>
             <div className={cls.nav_pages}>
                 <div className={cls.nav_pages_search}>
-                    <img src={Logo} alt="" />
+                    <img className={cls.logotype} src={Logo} alt="" />
 
                     <div className={cls.label}>
                         <input type="Search" placeholder='Search any things' />
@@ -38,10 +52,15 @@ export const Navbar = () => {
                 <div className={cls.nav_buy}>
                     <div className={cls.page_item}>
                         <img src={user} alt="" />
-                        <AppLink className={cls.route} to="/login">
-                            <span>Sign in</span>
+                        <AppLink className={cls.route} to="">
+                            <span onClick={openModal}>Sign in</span>
                         </AppLink>
                     </div>
+                    {
+                        isOpenModal && (
+                            <AuthModal />
+                        )
+                    }
                     <div className={cls.page_item}>
                         <img src={heart} alt="" />
                         <div>0</div>
@@ -56,9 +75,16 @@ export const Navbar = () => {
                             <span>Cart</span>
                         </AppLink>
                     </div>
+
+                    <img
+                        className={cls.menu}
+                        src={menu}
+                        alt=""
+                        onClick={toogleMenu}
+                    />
                 </div>
             </div>
-            <div className={cls.pages_navigation}>
+            <div className={`${cls.pages_navigation} ${isMenuActive ? cls.active : ""}`}>
                 <div className={cls.sort}>
                     <Sort />
                 </div>
