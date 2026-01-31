@@ -1,119 +1,112 @@
+import React from 'react';
 import cls from './Navbar.module.scss';
 import { AppLink, AuthModal, Button } from '../../shared/ui';
 import { Sort } from '../Sort/Sort';
 
-import location from "../../shared/assets/svg/location.svg";
-import group from "../../shared/assets//svg/group.svg";
-import Logo from "../../shared/assets/png/logo.png";
-import user from "../../shared/assets/svg/user.svg";
-import heart from "../../shared/assets/svg/heart.svg";
-import cart from "../../shared/assets/svg/shopping-cart.svg";
-import arrow_down from "../../shared/assets/svg/arrow-down-black.svg";
-import menu from "../../shared/assets/svg/burger_menu.svg";
-import React from 'react';
+import location from '../../shared/assets/svg/location.svg';
+import group from '../../shared/assets//svg/group.svg';
+import Logo from '../../shared/assets/png/logo.png';
+import user from '../../shared/assets/svg/user.svg';
+import heart from '../../shared/assets/svg/heart.svg';
+import cart from '../../shared/assets/svg/shopping-cart.svg';
+import arrow_down from '../../shared/assets/svg/arrow-down-black.svg';
+import menu from '../../shared/assets/svg/burger_menu.svg';
 
 export const Navbar = () => {
-    const [isMenuActive, setIsMenuActive] = React.useState(false);
-    const [isOpenModal, setIsOpenModal] = React.useState(false);
+  const [isMenuActive, setIsMenuActive] = React.useState(false);
+  const [isOpenModal, setIsOpenModal] = React.useState(false);
 
-    const toogleMenu = () => {
-        setIsMenuActive(prev => !prev)
-    };
+  const toogleMenu = () => {
+    setIsMenuActive((prev) => !prev);
+  };
 
-    const openModal = () => {
-        setIsOpenModal(true)
-    };
+  const openModal = () => {
+    setIsOpenModal(true);
+  };
 
-    return (
-        <nav className={cls.navbar}>
-            <div className={cls.nav_help}>
-                <span>Need help? Call us: (+98) 0234 456 789</span>
+  return (
+    <nav className={cls.navbar}>
+      <div className={cls.nav_help}>
+        <span>Need help? Call us: (+98) 0234 456 789</span>
 
-                <div className={cls.nav_help_block}>
-                    <div className={cls.store}>
-                        <img src={location} alt="" />
-                        <p>Our store</p>
-                    </div>
-                    <div className={cls.order}>
-                        <img src={group} alt="" />
-                        <p>Track your order</p>
-                    </div>
-                </div>
-            </div>
-            <div className={cls.nav_pages}>
-                <div className={cls.nav_pages_search}>
-                    <img className={cls.logotype} src={Logo} alt="" />
+        <div className={cls.nav_help_block}>
+          <div className={cls.store}>
+            <img src={location} alt="" />
+            <p>Our store</p>
+          </div>
+          <div className={cls.order}>
+            <img src={group} alt="" />
+            <p>Track your order</p>
+          </div>
+        </div>
+      </div>
+      <div className={cls.nav_pages}>
+        <div className={cls.nav_pages_search}>
+          <img className={cls.logotype} src={Logo} alt="" />
 
-                    <div className={cls.label}>
-                        <input type="Search" placeholder='Search any things' />
-                        <Button variant='deafult'>Search</Button>
-                    </div>
-                </div>
-                <div className={cls.nav_buy}>
-                    <div className={cls.page_item}>
-                        <img src={user} alt="" />
-                        <AppLink className={cls.route} to="">
-                            <span onClick={openModal}>Sign in</span>
-                        </AppLink>
-                    </div>
-                    {
-                        isOpenModal && (
-                            <AuthModal />
-                        )
-                    }
-                    <div className={cls.page_item}>
-                        <img src={heart} alt="" />
-                        <div>0</div>
-                        <AppLink className={cls.route} to="favorites">
-                            <span>Favorites</span>
-                        </AppLink>
-                    </div>
-                    <div className={cls.page_item}>
-                        <img src={cart} alt="" />
-                        <div>0</div>
-                        <AppLink className={cls.route} to="/cart">
-                            <span>Cart</span>
-                        </AppLink>
-                    </div>
+          <div className={cls.label}>
+            <input type="Search" placeholder="Search any things" />
+            <Button variant="deafult">Search</Button>
+          </div>
+        </div>
+        <div className={cls.nav_buy}>
+          <div className={cls.page_item}>
+            <img src={user} alt="" />
+            <AppLink className={cls.route} to="">
+              <span onClick={openModal}>Sign in</span>
+            </AppLink>
+          </div>
+          {isOpenModal && <AuthModal />}
+          <div className={cls.page_item}>
+            <img src={heart} alt="" />
+            <div>0</div>
+            <AppLink className={cls.route} to="favorites">
+              <span>Favorites</span>
+            </AppLink>
+          </div>
+          <div className={cls.page_item}>
+            <img src={cart} alt="" />
+            <div>0</div>
+            <AppLink className={cls.route} to="/cart">
+              <span>Cart</span>
+            </AppLink>
+          </div>
 
-                    <img
-                        className={cls.menu}
-                        src={menu}
-                        alt=""
-                        onClick={toogleMenu}
-                    />
-                </div>
-            </div>
-            <div className={`${cls.pages_navigation} ${isMenuActive ? cls.active : ""}`}>
-                <div className={cls.sort}>
-                    <Sort />
-                </div>
-                <div className={cls.pages_block}>
-                    <ul>
-                        <AppLink className={cls.page} to="/">
-                            <li>Home</li>
-                            <img src={arrow_down} alt="" />
-                        </AppLink>
-                        <AppLink className={cls.page} to="/">
-                            <li>Catalog</li>
-                            <img src={arrow_down} alt="" />
-                        </AppLink>
-                        <AppLink className={cls.page} to="/">
-                            <li>Blog</li>
-                            <img src={arrow_down} alt="" />
-                        </AppLink>
-                        <AppLink className={cls.page} to="/">
-                            <li>Pages</li>
-                            <img src={arrow_down} alt="" />
-                        </AppLink>
-                        <AppLink className={cls.page} to="/">
-                            <li>About us</li>
-                            <img src={arrow_down} alt="" />
-                        </AppLink>
-                    </ul>
-                    <p>30 Days Free Return</p>
-                </div>
-            </div>
-        </nav>
-    )
+          <img className={cls.menu} src={menu} alt="" onClick={toogleMenu} />
+        </div>
+      </div>
+      <div
+        className={`${cls.pages_navigation} ${isMenuActive ? cls.active : ''}`}
+      >
+        <div className={cls.sort}>
+          <Sort />
+        </div>
+        <div className={cls.pages_block}>
+          <ul>
+            <AppLink className={cls.page} to="/">
+              <li>Home</li>
+              <img src={arrow_down} alt="" />
+            </AppLink>
+            <AppLink className={cls.page} to="/">
+              <li>Catalog</li>
+              <img src={arrow_down} alt="" />
+            </AppLink>
+            <AppLink className={cls.page} to="/">
+              <li>Blog</li>
+              <img src={arrow_down} alt="" />
+            </AppLink>
+            <AppLink className={cls.page} to="/">
+              <li>Pages</li>
+              <img src={arrow_down} alt="" />
+            </AppLink>
+            <AppLink className={cls.page} to="/">
+              <li>About us</li>
+              <img src={arrow_down} alt="" />
+            </AppLink>
+          </ul>
+          <p>30 Days Free Return</p>
+        </div>
+      </div>
+    </nav>
+  );
 };

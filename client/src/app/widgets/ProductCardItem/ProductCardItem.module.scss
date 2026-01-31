@@ -1,361 +1,361 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables.scss' as *;
 
 .card {
-    width: 98%;
+  width: 98%;
+  height: 313px;
+  border-radius: 20px;
+  border: 1px solid $color_025;
+  cursor: pointer;
+
+  .image_block {
+    display: flex;
+    padding: 18px 0;
+    position: relative;
+
+    .headphone {
+      width: 92%;
+      border-radius: 30px;
+    }
+
+    div {
+      position: absolute;
+      right: 20px;
+      top: 36px;
+      width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      background: $color_029;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  .product_wrap {
+    position: relative;
+
+    .product_info {
+      visibility: visible;
+      opacity: 1;
+      transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+      padding: 0 13px;
+
+      span {
+        color: $color_003;
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      p {
+        color: $color_017;
+        font-size: 17px;
+        font-weight: 600;
+      }
+    }
+
+    .product_btns {
+      display: flex;
+      width: 100%;
+      opacity: 0;
+      visibility: hidden;
+      box-sizing: border-box;
+      transform: translateY(15px);
+      transform: all 0.3s ease;
+      padding: 27px 6px;
+      gap: 20px;
+      position: absolute;
+      top: 0;
+
+      .btn {
+        display: flex;
+        justify-content: space-around;
+        width: 204px;
+        gap: 15px;
+
+        div {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background: $color_002;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 17px;
+            height: 17px;
+          }
+        }
+      }
+
+      .btn_eye {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 60px;
+        background: $color_006;
+        border-radius: 20px;
+      }
+    }
+  }
+
+  &:hover {
+    .product_info {
+      visibility: hidden;
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+
+    .product_btns {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+@media (width >= 991px) and (width <= 1230px) {
+  .card {
+    width: 100%;
+    max-width: 308px;
     height: 313px;
     border-radius: 20px;
     border: 1px solid $color_025;
     cursor: pointer;
 
     .image_block {
+      display: flex;
+      padding: 18px 0;
+      position: relative;
+
+      .headphone {
+        width: 92%;
+        border-radius: 30px;
+      }
+
+      div {
+        position: absolute;
+        right: 20px;
+        top: 36px;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background: $color_029;
         display: flex;
-        padding: 18px 0;
-        position: relative;
-
-        .headphone {
-            width: 92%;
-            border-radius: 30px;
-        }
-
-        div {
-            position: absolute;
-            right: 20px;
-            top: 36px;
-            width: 27px;
-            height: 27px;
-            border-radius: 50%;
-            background: $color_029;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+        align-items: center;
+        justify-content: center;
+      }
     }
 
     .product_wrap {
-        position: relative;
+      position: relative;
 
-        .product_info {
-            visibility: visible;
-            opacity: 1;
-            transition: opacity 0.3s ease, transform 0.3s ease;
-            padding: 0 13px;
+      .product_info {
+        visibility: visible;
+        opacity: 1;
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s ease;
+        padding: 0 13px;
 
-            span {
-                color: $color_003;
-                font-size: 17px;
-                font-weight: 600;
-            }
-
-            p {
-                color: $color_017;
-                font-size: 17px;
-                font-weight: 600;
-            }
+        span {
+          color: $color_003;
+          font-size: 17px;
+          font-weight: 600;
         }
 
-        .product_btns {
+        p {
+          color: $color_017;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+
+      .product_btns {
+        display: flex;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        box-sizing: border-box;
+        transform: translateY(15px);
+        transform: all 0.3s ease;
+        padding: 27px 6px;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+
+        .btn {
+          display: flex;
+          justify-content: space-around;
+          width: 204px;
+          gap: 15px;
+
+          div {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: $color_002;
             display: flex;
-            width: 100%;
-            opacity: 0;
-            visibility: hidden;
-            box-sizing: border-box;
-            transform: translateY(15px);
-            transform: all 0.3s ease;
-            padding: 27px 6px;
-            gap: 20px;
-            position: absolute;
-            top: 0;
+            align-items: center;
+            justify-content: center;
 
-            .btn {
-                display: flex;
-                justify-content: space-around;
-                width: 204px;
-                gap: 15px;
-
-                div {
-                    width: 30px;
-                    height: 30px;
-                    border-radius: 50%;
-                    background: $color_002;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-
-                    img {
-                        width: 17px;
-                        height: 17px;
-                    }
-                }
+            img {
+              width: 17px;
+              height: 17px;
             }
-
-            .btn_eye {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 70px;
-                height: 60px;
-                background: $color_006;
-                border-radius: 20px;
-            }
+          }
         }
+
+        .btn_eye {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+          height: 60px;
+          background: $color_006;
+          border-radius: 20px;
+        }
+      }
     }
 
     &:hover {
+      .product_info {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+      }
 
-        .product_info {
-            visibility: hidden;
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-
-        .product_btns {
-            visibility: visible;
-            opacity: 1;
-            transform: translateY(0);
-        }
+      .product_btns {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
+  }
 }
 
-
-@media (min-width: 991px) and (max-width: 1230px) {
-
-    .card {
-        width: 100%;
-        max-width: 308px;
-        height: 313px;
-        border-radius: 20px;
-        border: 1px solid $color_025;
-        cursor: pointer;
-
-        .image_block {
-            display: flex;
-            padding: 18px 0;
-            position: relative;
-
-            .headphone {
-                width: 92%;
-                border-radius: 30px;
-            }
-
-            div {
-                position: absolute;
-                right: 20px;
-                top: 36px;
-                width: 27px;
-                height: 27px;
-                border-radius: 50%;
-                background: $color_029;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-        .product_wrap {
-            position: relative;
-
-            .product_info {
-                visibility: visible;
-                opacity: 1;
-                transition: opacity 0.3s ease, transform 0.3s ease;
-                padding: 0 13px;
-
-                span {
-                    color: $color_003;
-                    font-size: 17px;
-                    font-weight: 600;
-                }
-
-                p {
-                    color: $color_017;
-                    font-size: 17px;
-                    font-weight: 600;
-                }
-            }
-
-            .product_btns {
-                display: flex;
-                width: 100%;
-                opacity: 0;
-                visibility: hidden;
-                box-sizing: border-box;
-                transform: translateY(15px);
-                transform: all 0.3s ease;
-                padding: 27px 6px;
-                gap: 20px;
-                position: absolute;
-                top: 0;
-
-                .btn {
-                    display: flex;
-                    justify-content: space-around;
-                    width: 204px;
-                    gap: 15px;
-
-                    div {
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        background: $color_002;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            width: 17px;
-                            height: 17px;
-                        }
-                    }
-                }
-
-                .btn_eye {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 70px;
-                    height: 60px;
-                    background: $color_006;
-                    border-radius: 20px;
-                }
-            }
-        }
-
-        &:hover {
-
-            .product_info {
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            .product_btns {
-                visibility: visible;
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-    }
+@media (width >= 768px) and (width <= 991px) {
 }
 
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (width <= 481px) {
+  .card {
+    width: 100%;
+    max-width: 308px;
+    height: 313px;
+    border-radius: 20px;
+    border: 1px solid $color_025;
+    cursor: pointer;
 
-@media (max-width: 481px) {
+    .image_block {
+      display: flex;
+      padding: 18px 0;
+      position: relative;
 
-    .card {
-        width: 100%;
-        max-width: 308px;
-        height: 313px;
-        border-radius: 20px;
-        border: 1px solid $color_025;
-        cursor: pointer;
+      .headphone {
+        width: 92%;
+        border-radius: 30px;
+      }
 
-        .image_block {
-            display: flex;
-            padding: 18px 0;
-            position: relative;
-
-            .headphone {
-                width: 92%;
-                border-radius: 30px;
-            }
-
-            div {
-                position: absolute;
-                right: 20px;
-                top: 36px;
-                width: 27px;
-                height: 27px;
-                border-radius: 50%;
-                background: $color_029;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-        }
-
-        .product_wrap {
-            position: relative;
-
-            .product_info {
-                visibility: visible;
-                opacity: 1;
-                transition: opacity 0.3s ease, transform 0.3s ease;
-                padding: 0 13px;
-
-                span {
-                    color: $color_003;
-                    font-size: 17px;
-                    font-weight: 600;
-                }
-
-                p {
-                    color: $color_017;
-                    font-size: 17px;
-                    font-weight: 600;
-                }
-            }
-
-            .product_btns {
-                display: flex;
-                width: 100%;
-                opacity: 0;
-                visibility: hidden;
-                box-sizing: border-box;
-                transform: translateY(15px);
-                transform: all 0.3s ease;
-                padding: 27px 6px;
-                gap: 20px;
-                position: absolute;
-                top: 0;
-
-                .btn {
-                    display: flex;
-                    justify-content: space-around;
-                    width: 204px;
-                    gap: 15px;
-
-                    div {
-                        width: 30px;
-                        height: 30px;
-                        border-radius: 50%;
-                        background: $color_002;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        img {
-                            width: 17px;
-                            height: 17px;
-                        }
-                    }
-                }
-
-                .btn_eye {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    width: 70px;
-                    height: 60px;
-                    background: $color_006;
-                    border-radius: 20px;
-                }
-            }
-        }
-
-        &:hover {
-
-            .product_info {
-                visibility: hidden;
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-
-            .product_btns {
-                visibility: visible;
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+      div {
+        position: absolute;
+        right: 20px;
+        top: 36px;
+        width: 27px;
+        height: 27px;
+        border-radius: 50%;
+        background: $color_029;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
 
+    .product_wrap {
+      position: relative;
+
+      .product_info {
+        visibility: visible;
+        opacity: 1;
+        transition:
+          opacity 0.3s ease,
+          transform 0.3s ease;
+        padding: 0 13px;
+
+        span {
+          color: $color_003;
+          font-size: 17px;
+          font-weight: 600;
+        }
+
+        p {
+          color: $color_017;
+          font-size: 17px;
+          font-weight: 600;
+        }
+      }
+
+      .product_btns {
+        display: flex;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden;
+        box-sizing: border-box;
+        transform: translateY(15px);
+        transform: all 0.3s ease;
+        padding: 27px 6px;
+        gap: 20px;
+        position: absolute;
+        top: 0;
+
+        .btn {
+          display: flex;
+          justify-content: space-around;
+          width: 204px;
+          gap: 15px;
+
+          div {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: $color_002;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: 17px;
+              height: 17px;
+            }
+          }
+        }
+
+        .btn_eye {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70px;
+          height: 60px;
+          background: $color_006;
+          border-radius: 20px;
+        }
+      }
+    }
+
+    &:hover {
+      .product_info {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+
+      .product_btns {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
 }

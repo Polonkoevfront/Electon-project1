@@ -1,4 +1,4 @@
-import { Routing } from "./app/provider";
+import { Routing } from './app/provider';
 
 function App() {
   return (

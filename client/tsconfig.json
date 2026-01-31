@@ -34,7 +34,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
-    "moduleResolution": "node"
+    "moduleResolution": "bundler"
   },
   "ts-node": {
     "compilerOptions": {

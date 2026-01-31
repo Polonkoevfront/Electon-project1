@@ -1,174 +1,170 @@
-@import "../../styles/variables.scss";
+@use '../../styles/variables.scss' as *;
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 511px;
-    background: $color_010;
-    margin-top: 101px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 511px;
+  background: $color_010;
+  margin-top: 101px;
 
-    .follow_block {
+  .follow_block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 91.6%;
+    height: 139px;
+    background: $color_008;
+    border-radius: 20px;
+    margin-top: 2.9%;
+
+    .follow_logo {
+      color: $color_020;
+      margin-left: 6.6%;
+    }
+
+    .follow {
+      display: flex;
+      align-items: center;
+      margin-right: 6.6%;
+
+      .label {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        width: 91.6%;
-        height: 139px;
-        background: $color_008;
+        width: 388px;
+        height: 63px;
+        background: $color_002;
         border-radius: 20px;
-        margin-top: 2.9%;
+        overflow: hidden;
+        margin-right: 8rem;
 
-        .follow_logo {
-            color: $color_020;
-            margin-left: 6.6%;
+        input {
+          flex: 1;
+          height: 100%;
+          color: $color_008;
+          font-size: 14px;
+          border: none;
+          outline: none;
+          padding: 0 25px;
+          background: transparent;
+
+          &::placeholder {
+            color: $color_008;
+          }
         }
 
-        .follow {
-            display: flex;
-            align-items: center;
-            margin-right: 6.6%;
-
-            .label {
-                display: flex;
-                align-items: center;
-                width: 388px;
-                height: 63px;
-                background: $color_002;
-                border-radius: 20px;
-                overflow: hidden;
-                margin-right: 8rem;
-
-                input {
-                    flex: 1;
-                    height: 100%;
-                    color: $color_008;
-                    font-size: 14px;
-                    border: none;
-                    outline: none;
-                    padding: 0 25px;
-                    background: transparent;
-
-                    &::placeholder {
-                        color: $color_008;
-
-                    }
-                }
-
-                img {
-                    cursor: pointer;
-                    margin-right: 5%;
-                }
-            }
-
-            .call_num {
-                display: flex;
-
-                img {
-                    margin-right: 20px;
-                }
-
-                div {
-
-                    span,
-                    .num {
-                        display: block;
-                        color: $color_021;
-                        font-size: 14px;
-                        font-weight: 600;
-                    }
-
-                    .num {
-                        margin-top: 3px;
-                    }
-                }
-
-            }
+        img {
+          cursor: pointer;
+          margin-right: 5%;
         }
-    }
+      }
 
-    .follow_block2 {
+      .call_num {
         display: flex;
-        justify-content: space-between;
-        width: 91.6%;
-        margin-top: 20px;
 
-        .about_site {
-            display: flex;
-            flex-direction: column;
-            width: 18%;
-
-            .info_block {
-
-                div {
-                    margin-top: 36px;
-
-                    span {
-                        display: block;
-                        white-space: nowrap;
-                        color: $color_020;
-                        font-size: 16px;
-                        margin-top: 5px;
-                    }
-                }
-            }
-
-            .network_block {
-                margin-top: 25px;
-
-                hr {
-                    width: 14.8rem;
-                }
-
-                div {
-                    display: flex;
-                    margin-top: 20px;
-                    gap: 2.3rem;
-
-                    img {
-                        cursor: pointer;
-                    }
-                }
-            }
+        img {
+          margin-right: 20px;
         }
 
-        .footer_pages {
-            display: flex;
-            align-items: center;
-            width: 75%;
+        div {
+          span,
+          .num {
+            display: block;
+            color: $color_021;
+            font-size: 14px;
+            font-weight: 600;
+          }
 
-            div {
-                display: flex;
-                width: 100%;
-                justify-content: space-between;
-                margin-top: 11px;
-
-                ul {
-                    list-style-position: outside;
-                    margin: 0;
-                    padding: 0;
-
-                    span {
-                        display: block;
-                        color: $color_020;
-                        font-size: 19px;
-                        font-weight: 600;
-                        margin-left: -20%;
-                    }
-
-                    li {
-                        color: $color_020;
-                        font-size: 19px;
-                        cursor: pointer;
-                        margin-top: 7px;
-
-                        &::marker {
-                            color: $color_052;
-                            font-size: 1.7em;
-                        }
-                    }
-                }
-            }
+          .num {
+            margin-top: 3px;
+          }
         }
+      }
     }
+  }
+
+  .follow_block2 {
+    display: flex;
+    justify-content: space-between;
+    width: 91.6%;
+    margin-top: 20px;
+
+    .about_site {
+      display: flex;
+      flex-direction: column;
+      width: 18%;
+
+      .info_block {
+        div {
+          margin-top: 36px;
+
+          span {
+            display: block;
+            white-space: nowrap;
+            color: $color_020;
+            font-size: 16px;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .network_block {
+        margin-top: 25px;
+
+        hr {
+          width: 14.8rem;
+        }
+
+        div {
+          display: flex;
+          margin-top: 20px;
+          gap: 2.3rem;
+
+          img {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .footer_pages {
+      display: flex;
+      align-items: center;
+      width: 75%;
+
+      div {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 11px;
+
+        ul {
+          list-style-position: outside;
+          margin: 0;
+          padding: 0;
+
+          span {
+            display: block;
+            color: $color_020;
+            font-size: 19px;
+            font-weight: 600;
+            margin-left: -20%;
+          }
+
+          li {
+            color: $color_020;
+            font-size: 19px;
+            cursor: pointer;
+            margin-top: 7px;
+
+            &::marker {
+              color: $color_052;
+              font-size: 1.7em;
+            }
+          }
+        }
+      }
+    }
+  }
 }

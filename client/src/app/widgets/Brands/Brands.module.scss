@@ -1,77 +1,74 @@
-@import '../../styles/variables.scss';
+@use '../../styles/variables.scss' as *;
 
 .brands {
+  display: flex;
+  justify-content: center;
+  width: 91.3%;
+  height: 136px;
+  background: $color_010;
+  box-sizing: border-box;
+  margin-left: 4.4%;
+  margin-top: 54px;
+
+  .brands_body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+
+    img {
+      width: 203px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (width >= 992px) and (width <= 1056px) {
+  .brands {
     display: flex;
     justify-content: center;
     width: 91.3%;
     height: 136px;
     background: $color_010;
-    box-sizing: border-box;
     margin-left: 4.4%;
     margin-top: 54px;
 
     .brands_body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        box-sizing: border-box;
-        z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
 
-        img {
-            width: 203px;
-            margin: 0 auto;
-        }
+      img {
+        width: 20%;
+        margin: 0 auto;
+      }
     }
+  }
 }
 
+@media (width >= 768px) and (width <= 991px) {
+  .brands {
+    display: flex;
+    justify-content: center;
+    width: 91.3%;
+    height: 136px;
+    background: $color_010;
+    margin-left: 4.4%;
+    margin-top: 54px;
 
-@media (min-width: 992px) and (max-width: 1056px) {
+    .brands_body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
 
-    .brands {
-        display: flex;
-        justify-content: center;
-        width: 91.3%;
-        height: 136px;
-        background: $color_010;
-        margin-left: 4.4%;
-        margin-top: 54px;
-
-        .brands_body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            img {
-                width: 20%;
-                margin: 0 auto;
-            }
-        }
+      img {
+        width: 20%;
+        margin: 0 auto;
+      }
     }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .brands {
-        display: flex;
-        justify-content: center;
-        width: 91.3%;
-        height: 136px;
-        background: $color_010;
-        margin-left: 4.4%;
-        margin-top: 54px;
-
-        .brands_body {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-
-            img {
-                width: 20%;
-                margin: 0 auto;
-            }
-        }
-    }
+  }
 }

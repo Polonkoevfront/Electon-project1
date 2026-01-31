@@ -1,128 +1,128 @@
-@import '../../../styles/variables.scss';
+@use '../../../styles/variables.scss' as *;
 
 .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 20px;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  cursor: pointer;
 
-    &.primary {
-        color: $color_008;
-        background: $color_003;
-        border: none;
-    }
+  &.primary {
+    color: $color_008;
+    background: $color_003;
+    border: none;
+  }
 
-    &.deafult {
-        color: $color_008;
-        background: $color_002;
-        border: none;
-    }
+  &.deafult {
+    color: $color_008;
+    background: $color_002;
+    border: none;
+  }
 
-    &.outline {
-        color: $color_012;
-        background: none;
-        border: 1px solid $color_012;
-    }
+  &.outline {
+    color: $color_012;
+    background: none;
+    border: 1px solid $color_012;
+  }
 
-    &.secondary {
-        color: $color_017;
-        background: $color_006;
-        border: none;
-    }
+  &.secondary {
+    color: $color_017;
+    background: $color_006;
+    border: none;
+  }
 
-    &.quaternary {
-        color: $color_013;
-        border: 1px solid $color_013;
-        background: none;
-    }
+  &.quaternary {
+    color: $color_013;
+    border: 1px solid $color_013;
+    background: none;
+  }
 
-    &.muted {
-        color: $color_018;
-        border: 1px solid $color_001;
-    }
+  &.muted {
+    color: $color_018;
+    border: 1px solid $color_001;
+  }
 
-    &.muted2 {
-        color: $color_031;
-        border: 1px solid $color_016;
-        background: none;
-    }
+  &.muted2 {
+    color: $color_031;
+    border: 1px solid $color_016;
+    background: none;
+  }
 
-    &.w132 {
-        width: 132px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w132 {
+    width: 132px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w134 {
-        width: 134px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w134 {
+    width: 134px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w144 {
-        width: 144px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w144 {
+    width: 144px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w187 {
-        width: 187px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w187 {
+    width: 187px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w204 {
-        width: 204px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w204 {
+    width: 204px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w223 {
-        width: 223px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w223 {
+    width: 223px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w241 {
-        width: 241px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w241 {
+    width: 241px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w295 {
-        width: 295px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w295 {
+    width: 295px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.w339 {
-        width: 339px;
-        font-size: 16px;
-        font-weight: 600;
-    }
+  &.w339 {
+    width: 339px;
+    font-size: 16px;
+    font-weight: 600;
+  }
 
-    &.h45 {
-        height: 45px;
-    }
+  &.h45 {
+    height: 45px;
+  }
 
-    &.h52 {
-        height: 52px;
-    }
+  &.h52 {
+    height: 52px;
+  }
 
-    &.h56 {
-        height: 56px;
-    }
+  &.h56 {
+    height: 56px;
+  }
 
-    &.h60 {
-        height: 60px;
-    }
+  &.h60 {
+    height: 60px;
+  }
 
-    &.h61 {
-        height: 61px;
-    }
+  &.h61 {
+    height: 61px;
+  }
 
-    &.h73 {
-        height: 73px;
-    }
+  &.h73 {
+    height: 73px;
+  }
 }

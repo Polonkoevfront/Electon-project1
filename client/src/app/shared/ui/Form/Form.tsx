@@ -3,14 +3,14 @@ import cls from './Form.module.scss';
 import { classNames } from '../../lib/classNames';
 
 interface FormProps extends FormHTMLAttributes<HTMLFormElement> {
-    children: ReactNode;
-    className?: string;
-};
+  children: ReactNode;
+  className?: string;
+}
 
 export const Form: FC<FormProps> = ({ children, className = '', onSubmit }) => {
-    return (
-        <form onSubmit={onSubmit} className={classNames(cls.form, {}, [className])}>
-            {children}
-        </form>
-    )
+  return (
+    <form onSubmit={onSubmit} className={classNames(cls.form, {}, [className])}>
+      {children}
+    </form>
+  );
 };
