@@ -3,6 +3,8 @@
 export default {
   extends: ['stylelint-config-standard-scss'],
   rules: {
-    'number-leading-zero': 'always',
+    "stylistic/number-leading-zero": "always",
+    'media-feature-range-notation': 'prefix',
+    "selector-class-pattern": null
   },
 };

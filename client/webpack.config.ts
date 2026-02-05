@@ -11,14 +11,16 @@ interface EnvVariables {
   port: number;
 }
 
+const dirname = path.resolve();
+
 export default (env: EnvVariables) => {
   const isDev = env.mode === 'development';
 
-  const config: webpack.Configuration = {
+  const config: webpack.Configuration & {devServer?: DevServerConfiguration} = {
     mode: env.mode ?? 'development',
-    entry: path.resolve(__dirname, 'src', 'index.tsx'),
+    entry: path.resolve(dirname, 'src', 'index.tsx'),
     output: {
-      path: path.resolve(__dirname, 'build'),
+      path: path.resolve(dirname, 'build'),
       filename: '[name].[contenthash].js',
       clean: true,
       // publicPath: '/'
@@ -29,7 +31,7 @@ export default (env: EnvVariables) => {
       //     'process.env.NODE_ENV': JSON.stringify(isDev ? 'development' : 'production'),
       // }),
       new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'public', 'index.html'),
+        template: path.resolve(dirname, 'public', 'index.html'),
         // inject: 'body'
       }),
       isDev && new webpack.ProgressPlugin(),

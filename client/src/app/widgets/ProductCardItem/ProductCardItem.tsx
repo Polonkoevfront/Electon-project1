@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Button } from '../../shared/ui';
 import cls from './ProductCardItem.module.scss';
 
-import stars from '../../shared/assets/svg/stars.svg';
+// import stars from '../../shared/assets/svg/stars.svg';
 import headphone from '../../shared/assets/png/headphone.png';
 import heart from '../../shared/assets/svg/heart_black.svg';
 import cart from '../../shared/assets/svg/shopping-cart.svg';
@@ -12,12 +12,12 @@ type CardItemProps = {
   id: string;
   title: string;
   price: number;
-  type: string;
+  types?: string;
   imageUrl: string;
 };
 
 export const ProductCardItem: FC<CardItemProps> = (props) => {
-  const { id, title, price, type, imageUrl } = props;
+  const { title, price, imageUrl } = props;
 
   return (
     <>

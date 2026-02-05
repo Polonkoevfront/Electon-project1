@@ -6,14 +6,14 @@ import { FC, useRef } from 'react';
 import stars from '../../shared/assets/svg/stars.svg';
 
 type ProductCardsProps = {
-  id: string;
+  id?: string;
   title: string;
   price: number;
-  // types: string[];
+  types?: string[];
   imageUrl: string;
 };
 
-export const ProductCards: FC<ProductCardsProps> = (props) => {
+export const ProductCards: FC<ProductCardsProps> = () => {
   // const { id, title, price, imageUrl } = props;
 
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -67,7 +67,6 @@ export const ProductCards: FC<ProductCardsProps> = (props) => {
               <ProductCardItem
                 key={cardIndex}
                 id="q"
-                type=""
                 title="Wireless headphones"
                 price={1170}
                 imageUrl={stars}

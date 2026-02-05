@@ -56,7 +56,7 @@ export const Navbar = () => {
               <span onClick={openModal}>Sign in</span>
             </AppLink>
           </div>
-          {isOpenModal && <AuthModal />}
+          {isOpenModal && <AuthModal onClose={() => setIsOpenModal(false)}/>}
           <div className={cls.page_item}>
             <img src={heart} alt="" />
             <div>0</div>
