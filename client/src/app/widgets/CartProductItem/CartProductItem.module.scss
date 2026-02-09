@@ -3,17 +3,22 @@
 .cart_product_item {
   display: flex;
   align-items: center;
+  border: 1px solid red;
   margin-top: 10px;
 
   .product_info {
     display: flex;
     align-items: center;
+    flex-shrink: 1;
+    min-width: 0;
 
     img {
       object-fit: contain;
     }
 
     div {
+      white-space: nowrap;
+      overflow: visible;
       padding-left: 21px;
       padding-top: 25px;
 

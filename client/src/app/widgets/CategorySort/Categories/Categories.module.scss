@@ -81,3 +81,88 @@
     }
   }
 }
+
+@media (min-width: 992) and (max-width: 1199px) {
+  
+  .categories_block {
+  table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    caption {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 11rem;
+
+      span {
+        color: $color_003;
+        font-weight: 600;
+      }
+
+      p {
+        color: $color_041;
+        font-size: 15px;
+      }
+    }
+
+    tbody {
+      display: flex;
+      flex-direction: column;
+
+      td {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: -3px;
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          input[type='checkbox'] {
+            width: 30px;
+            height: 30px;
+            border-radius: 7px;
+            background-color: $color_029;
+            appearance: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:checked {
+              background-color: $color_045;
+
+              &::after {
+                content: '';
+                width: 10px;
+                height: 10px;
+                background-image: url('../../../shared/assets/svg/mark_checkbox.svg');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+              }
+            }
+          }
+
+          span {
+            color: $color_031;
+          }
+        }
+
+        p {
+          color: $color_031;
+          padding-right: 2.7px;
+        }
+      }
+    }
+
+    hr {
+      width: 96.4%;
+    }
+  }
+}
+}

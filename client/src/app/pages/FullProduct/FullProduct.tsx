@@ -15,7 +15,6 @@ import heart from '../../shared/assets/svg/save_heart.svg';
 import google from '../../shared/assets/svg/google.svg';
 import facebook from '../../shared/assets/svg/facebook.svg';
 import whatsapp from '../../shared/assets/svg/whatsapp.svg';
-import stars from '../../shared/assets/svg/stars.svg';
 
 export const FullProduct = () => {
   const stars = Array.from({ length: 5 });
@@ -49,11 +48,11 @@ export const FullProduct = () => {
               ))}
               <p>No reviews</p>
             </div>
-            <span>
-              Availability:
+            <div>
+              <span>Availability:</span>
               <img src={check} alt="" />
               <span className={cls.check_txt}>In stock</span>
-            </span>
+            </div>
             <p className={cls.recomendation}>
               Hurry up! only 34 product left in stock!
             </p>
@@ -136,7 +135,7 @@ export const FullProduct = () => {
               imageUrl=""
               price={11.7}
               title="Wireless headphones"
-              type=""
+              // type=""
             />
           ))}
         </div>

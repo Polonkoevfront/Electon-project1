@@ -22,6 +22,8 @@ export default defineConfig([
       curly: 'warn',
       'no-else-return': 'warn',
       'react/react-in-jsx-scope': 'off',
+      'no-unused-vars': 'off',
+      '@typescript-eslint/no-unused-vars': 'off'
     },
 
     languageOptions: {

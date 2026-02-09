@@ -3,7 +3,6 @@ import {
   Brand,
   Categories,
   Color,
-  DiscountNews,
   Footer,
   Navbar,
   ProductCardItem,
@@ -11,6 +10,8 @@ import {
   Size,
 } from '../../widgets';
 import cls from './CategoryPage.module.scss';
+
+import stars from "../../shared/assets/svg/stars.svg";
 
 export const CategoryPage = () => {
   const productCategoryCards = Array.from({ length: 12 });
@@ -33,11 +34,11 @@ export const CategoryPage = () => {
           <div className={cls.cards_block}>
             {productCategoryCards.map((_, index) => (
               <ProductCardItem
+              key={index}
                 id=""
                 title="Wireless headphones"
                 price={11.7}
-                imageUrl=""
-                type=""
+                imageUrl={stars}
               />
             ))}
           </div>

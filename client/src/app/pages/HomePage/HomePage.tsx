@@ -20,7 +20,7 @@ export const HomePage = () => {
 
       <CarouselNews />
       <CarouselNewProduct />
-      <ProductCards id="" imageUrl="" price={1} title="" />
+      <ProductCards imageUrl="sss" price={1} title="" />
       <DiscountNews />
       <PopularElectrons />
       <AboutOurProduct />

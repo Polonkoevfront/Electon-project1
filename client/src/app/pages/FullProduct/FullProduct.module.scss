@@ -7,14 +7,19 @@
     padding: 6.7% 4.3%;
 
     .product_images_block {
+      min-width: 0;
+
       .full_image {
         width: 100%;
-        flex-shrink: 0;
-        object-fit: contain;
+        max-width: 647px;
+        height: auto;
+        display: block;
       }
 
       div {
         display: flex;
+        width: 100%;
+        max-width: 647px;
         margin-top: 10px;
         gap: 19px;
 
@@ -22,10 +27,18 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 310px;
+          flex: 1;
+          min-width: 0;
+          max-width: 310px;
           height: 157px;
           border-radius: 20px;
           border: 1px solid $color_037;
+
+          img {
+          width: 100%;
+          max-width: 282px;
+          object-fit: contain;
+          }
         }
       }
     }
@@ -33,7 +46,8 @@
     .product_full_block {
       display: flex;
       flex-direction: column;
-      margin: 0 49px;
+      width: 42.22%;
+      margin: 0 auto;
 
       .playgame_block {
         .product_title {
@@ -60,19 +74,19 @@
           }
         }
 
-        span {
+        div {
+          display: flex;
+          gap: 19px;
+        
+          span {
           color: $color_031;
           font-size: 18px;
-        }
-
-        img[src*='check'] {
-          padding-left: 19px;
         }
 
         .check_txt {
           color: $color_038;
           font-size: 18px;
-          padding-left: 14px;
+        }
         }
 
         .recomendation {
@@ -80,7 +94,7 @@
         }
 
         hr {
-          width: 38.6em;
+          width: 110.4%;
           margin-top: 20px;
         }
       }
@@ -278,3 +292,6 @@
     }
   }
 }
+
+
+@media (min-width: px) and (max-width: px) {}

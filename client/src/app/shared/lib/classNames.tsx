@@ -5,7 +5,7 @@ export function classNames(
   additionalClasses?: string[],
 ): string {
   const modClasses = Object.entries(mods)
-    .filter(([_, value]) => value)
+    .filter(([value]) => value)
     .map(([key]) => key);
 
   return [baseClass, ...modClasses, ...(additionalClasses || [])].join(' ');

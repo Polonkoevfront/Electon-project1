@@ -1,7 +1,5 @@
 import { useRef } from 'react';
 import cls from './CarouselNewProduct.module.scss';
-import { Button } from '../../shared/ui/Button/Button';
-import { Text } from '../../shared/ui';
 
 import arrow_left from '../../shared/assets/svg/arrow-left.svg';
 import arrow_right from '../../shared/assets/svg/arrow-right.svg';
